@@ -4,6 +4,11 @@ const client = new Discord.Client();
 
 console.log('The bot is working now ')
 
+let channel = client.channels.get("585585535754567680")
+        channel.createInvite({ maxUses: 1 })
+        .then(invite => { message.channel.send(`https://discord.gg/${invite.code}`) })
+    }
+
 
 
 
